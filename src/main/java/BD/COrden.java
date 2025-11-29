@@ -29,6 +29,8 @@ public class COrden {
             //Se hace la consulta para encontrar al paciente mediante su documento
             String consultaPaciente = "SELECT id FROM pacientes WHERE documento = ?";
             PreparedStatement psPaciente = objConn.ConectarBase().prepareStatement(consultaPaciente);
+            
+            //Se le pasa por parametro
             psPaciente.setString(1, documento);
 
             ResultSet rs = psPaciente.executeQuery();
