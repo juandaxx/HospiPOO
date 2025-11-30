@@ -29,6 +29,7 @@ public class CUsuario {
         try {
             PreparedStatement ps = objConn.ConectarBase().prepareStatement(consulta);
             
+            //Se le pasan los parametros
             ps.setString(1, nombre);
             ps.setString(2, telefono);
             ps.setInt(3, edad);

@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package System;
-
-import Conexion.ConexionBD;
 import Backend.Cargador;
 import Controller.Controlador;
 
