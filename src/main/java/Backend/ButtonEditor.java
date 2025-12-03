@@ -43,7 +43,7 @@ public class ButtonEditor extends DefaultCellEditor {
 
     @Override
     public Component getTableCellEditorComponent(JTable table, Object value,
-            boolean isSelected, int row, int col) {
+        boolean isSelected, int row, int col) {
 
         this.table = table;
         this.row = row;

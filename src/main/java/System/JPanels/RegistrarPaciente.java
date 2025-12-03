@@ -84,14 +84,14 @@ public class RegistrarPaciente extends javax.swing.JPanel {
 
     //Boton crear paciente
     private void BtnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCrearActionPerformed
-    Controlador cont = new Controlador();
-    cont.AgregarPaciente(TflNombre, TxfTelefono, TxfEdad, TxfDocumento, TxfCorreo, TxfDireccion);
+        Controlador cont = new Controlador();
+        cont.AgregarPaciente(TflNombre, TxfTelefono, TxfEdad, TxfDocumento, TxfCorreo, TxfDireccion);
 
-    // cerrar ventana
-    javax.swing.SwingUtilities.getWindowAncestor(this).dispose();
+        // cerrar ventana
+        javax.swing.SwingUtilities.getWindowAncestor(this).dispose();
 
-    // refrescar tabla
-    panelPacientes.cargarPacientes();
+        // refrescar tabla
+        panelPacientes.cargarPacientes();
     }//GEN-LAST:event_BtnCrearActionPerformed
 
     private void TxfDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxfDireccionActionPerformed

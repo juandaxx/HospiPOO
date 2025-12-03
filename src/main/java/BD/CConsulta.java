@@ -31,6 +31,8 @@ public class CConsulta {
             //Primero se extrae el ID del paciente al que se le crea la consulta, mediante su documento
             String consultaPaciente = "SELECT id FROM pacientes WHERE documento = ?";
             PreparedStatement psPaciente = objConn.ConectarBase().prepareStatement(consultaPaciente);
+            
+            //Pasamos parametros
             psPaciente.setString(1, documento);
 
             ResultSet rs = psPaciente.executeQuery();

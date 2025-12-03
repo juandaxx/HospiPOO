@@ -24,7 +24,6 @@ public class HistoriasClinicas extends javax.swing.JPanel {
     public HistoriasClinicas() {
         initComponents();
         cargarOpciones();
-        cargarOpciones();
         aplicarEstilos();
     }
 
